@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es-MX" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Departamento en renta · Piso 13 · Santa Fe CDMX | A estrenar con terraza panorámica</title>
+<meta name="description" content="Renta exclusiva: departamento a estrenar en el piso 13 con interiorismo showroom, terraza privada de 23.95 m² y vista panorámica en Santa Fe, CDMX. 2 recámaras, 2 baños, 2 estacionamientos. Agenda tu visita.">
+<meta property="og:title" content="Piso 13 · La ciudad a tus pies — Departamento en renta en Santa Fe">
+<meta property="og:description" content="A estrenar, con interiorismo showroom y terraza panorámica. Agenda tu visita exclusiva.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="IKAL Realty Group">
+<meta property="og:url" content="https://direcciondsigna-code.github.io/renta-piso13-santafe/">
+<meta property="og:image" content="https://direcciondsigna-code.github.io/renta-piso13-santafe/assets/og-share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Departamento en renta en el piso 13, Santa Fe: sala con ventanal panorámico y terraza">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FAF7F2">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ivory:  '#FAF7F2',   /* blanco cálido */
+          pearl:  '#EDEAE4',   /* gris perla */
+          sand:   '#D9CDBB',   /* beige */
+          wood:   '#A67C52',   /* madera natural */
+          olive:  '#5F644F',   /* verde olivo sutil */
+          olived: '#3F4336',   /* olivo profundo */
+          gold:   '#B89B6A',   /* dorado mate / champagne */
+          ink:    '#2B2A26'
+        },
+        fontFamily: {
+          serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+          sans:  ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif']
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { background:#FAF7F2; color:#2B2A26; font-family:'Plus Jakarta Sans',system-ui,sans-serif; }
+  .ic { width:1.25rem; height:1.25rem; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; flex:none; }
+  .ic-fill { fill:currentColor; stroke:none; }
+  .eyebrow { letter-spacing:.24em; text-transform:uppercase; font-size:.7rem; font-weight:500; color:#8C7444; }
+  .display { font-family:'Cormorant Garamond',Georgia,serif; font-weight:500; line-height:1.02; letter-spacing:-.01em; }
+  .display em { font-style:italic; color:#8C7444; font-weight:400; }
+  .on-dark .display em, .display.on-dark em { color:#D9C79F; }
+  .arch { border-radius:999px 999px 1.25rem 1.25rem; }
+  .grain { background-image: radial-gradient(1200px 500px at 85% -10%, rgba(184,155,106,.18), transparent 60%), radial-gradient(900px 500px at -10% 40%, rgba(95,100,79,.10), transparent 60%); }
+
+  /* botones */
+  .btn { display:inline-flex; align-items:center; justify-content:center; gap:.6rem; padding:.95rem 1.6rem; border-radius:999px; font-weight:500; font-size:.92rem; letter-spacing:.02em; transition:transform .25s ease, background .25s ease, color .25s ease, box-shadow .25s ease, border-color .25s ease; cursor:pointer; text-align:center; }
+  .btn:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, button:focus-visible { outline:2px solid #B89B6A; outline-offset:3px; }
+  .btn-gold { background:#2B2A26; color:#FAF7F2; }
+  .btn-gold:hover { background:#3F4336; transform:translateY(-1px); box-shadow:0 10px 24px -12px rgba(43,42,38,.55); }
+  .btn-wa { background:transparent; color:#2B2A26; border:1px solid rgba(43,42,38,.28); }
+  .btn-wa:hover { background:#1F9D55; border-color:#1F9D55; color:#fff; transform:translateY(-1px); }
+  .btn-wa .ic { color:#1F9D55; transition:color .25s; }
+  .btn-wa:hover .ic { color:#fff; }
+  .btn-wa-solid { background:#1F9D55; color:#fff; border:1px solid #1F9D55; }
+  .btn-wa-solid:hover { background:#17804a; transform:translateY(-1px); box-shadow:0 10px 24px -12px rgba(31,157,85,.7); }
+  .btn-wa-light { background:transparent; color:#FAF7F2; border:1px solid rgba(250,247,242,.4); }
+  .btn-wa-light:hover { background:#1F9D55; border-color:#1F9D55; }
+
+  /* reveal */
+  .js .reveal { opacity:0; transform:translateY(22px); transition:opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal.in { opacity:1; transform:none; }
+  @media (prefers-reduced-motion: reduce) { .js .reveal { opacity:1; transform:none; transition:none; } html{scroll-behavior:auto} .pulse::after{animation:none!important} }
+
+  /* punto de disponibilidad */
+  .dot { position:relative; width:.5rem; height:.5rem; border-radius:999px; background:#4C8B5B; }
+  .dot::after { content:''; position:absolute; inset:-4px; border-radius:999px; background:#4C8B5B; opacity:.35; animation:ping 2s cubic-bezier(0,0,.2,1) infinite; }
+  @keyframes ping { 75%,100% { transform:scale(2.2); opacity:0; } }
+
+  /* WhatsApp flotante */
+  .fab { position:fixed; right:1rem; bottom:1rem; z-index:60; display:none; align-items:center; gap:.6rem; background:#1F9D55; color:#fff; border-radius:999px; padding:.85rem; box-shadow:0 14px 30px -10px rgba(31,157,85,.65); transition:transform .25s, background .25s; }
+  .fab:hover { background:#17804a; transform:translateY(-2px); }
+  .fab .ic { width:1.9rem; height:1.9rem; }
+  .fab span { display:none; font-weight:500; font-size:.9rem; padding-right:.6rem; }
+  @media (min-width:768px){ .fab { display:flex; right:1.75rem; bottom:1.75rem; padding:.85rem 1.1rem .85rem .85rem; } .fab span{ display:inline; } }
+  .fab::before { content:''; position:absolute; inset:0; border-radius:999px; box-shadow:0 0 0 0 rgba(31,157,85,.5); animation:ring 2.6s infinite; pointer-events:none; }
+  @keyframes ring { 0%{box-shadow:0 0 0 0 rgba(31,157,85,.45)} 70%,100%{box-shadow:0 0 0 16px rgba(31,157,85,0)} }
+
+  /* header */
+  #hdr { transition:background .3s ease, box-shadow .3s ease, backdrop-filter .3s ease; }
+  #hdr.solid { background:rgba(250,247,242,.97); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); box-shadow:0 1px 0 rgba(43,42,38,.07); }
+
+  /* amenidades */
+  .tile { position:relative; overflow:hidden; border-radius:1rem; background:#EDEAE4; }
+  .tile img { width:100%; height:100%; object-fit:cover; transition:transform 1.2s cubic-bezier(.2,.7,.2,1); }
+  .tile:hover img { transform:scale(1.05); }
+  .tile::after { content:''; position:absolute; inset:0; background:linear-gradient(to top, rgba(28,27,23,.72), rgba(28,27,23,0) 55%); pointer-events:none; }
+  .tile figcaption { position:absolute; left:1rem; bottom:.85rem; right:1rem; z-index:2; color:#FAF7F2; font-size:.85rem; font-weight:500; letter-spacing:.02em; }
+  .tile figcaption small { display:block; font-weight:300; opacity:.8; font-size:.72rem; letter-spacing:.06em; }
+
+  /* zoom */
+  [data-zoom] { cursor:zoom-in; }
+  #lb { position:fixed; inset:0; z-index:100; background:rgba(20,19,16,.92); display:none; align-items:center; justify-content:center; padding:1rem; }
+  #lb.open { display:flex; }
+  #lb img { max-width:100%; max-height:92vh; border-radius:.75rem; }
+  #lb button { position:absolute; top:1rem; right:1rem; color:#fff; width:2.75rem; height:2.75rem; border-radius:999px; background:rgba(255,255,255,.12); display:grid; place-items:center; }
+
+  .btn-call { background:transparent; color:#2B2A26; border:1px solid rgba(43,42,38,.28); }
+  .btn-call:hover { background:#2B2A26; border-color:#2B2A26; color:#FAF7F2; transform:translateY(-1px); }
+</style>
+</head>
+
+<body class="antialiased">
+
+<!-- Sprite de íconos -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-area" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6M3 14h18v4M21 14v-2a3 3 0 00-3-3h-7v5"/><circle cx="7" cy="11" r="1.6"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M4 12h16v2a5 5 0 01-5 5H9a5 5 0 01-5-5v-2zM6 12V6a2 2 0 013.5-1.3M7 19l-1 2M17 19l1 2"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 16l1.4-5.2A2 2 0 018.3 9.3h7.4a2 2 0 011.9 1.5L19 16M3.5 16h17v3h-2.5v-1.5h-12V19H3.5zM7.5 13h.01M16.5 13h.01"/></symbol>
+  <symbol id="i-tower" viewBox="0 0 24 24"><path d="M6 21V8l6-5 6 5v13M3 21h18M10 21v-4h4v4M10 10h4M10 13h4"/></symbol>
+  <symbol id="i-chef" viewBox="0 0 24 24"><path d="M7 14a4 4 0 01-.5-7.9A5 5 0 0116 5.5a4 4 0 011 8.5M7 14v6h10v-6M7 17h10"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 011-1h4a1 1 0 011 1v2M3 13h18"/></symbol>
+  <symbol id="i-party" viewBox="0 0 24 24"><path d="M8 3h8v4a4 4 0 01-8 0zM12 11v5M8 21h8M10 16h4"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19c2-4 5-7 9-9"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 005 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header id="hdr" class="fixed inset-x-0 top-0 z-50">
+  <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+    <a href="#inicio" class="block shrink-0" aria-label="IKAL Realty Group — inicio">
+      <img src="assets/logo-ikal.png" alt="IKAL Realty Group" width="296" height="128" class="h-11 w-auto md:h-12">
+    </a>
+    <nav class="hidden items-center gap-8 text-sm text-ink/80 lg:flex" aria-label="Principal">
+      <a href="#galeria" class="hover:text-wood transition">Experiencia</a>
+      <a href="#ficha" class="hover:text-wood transition">Ficha</a>
+      <a href="#amenidades" class="hover:text-wood transition">Amenidades</a>
+      <a href="#agenda" class="hover:text-wood transition">Agendar visita</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <a href="tel:+522206420082" class="hidden items-center gap-2 rounded-full px-3 py-2 text-sm text-ink/80 transition hover:text-wood sm:inline-flex" data-call="header">
+        <svg class="ic"><use href="#i-phone"/></svg> 220 642 0082
+      </a>
+      <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="header" class="btn btn-wa-solid !py-2.5 !px-4 text-sm">
+        <svg class="ic ic-fill"><use href="#i-wa"/></svg><span class="hidden sm:inline">WhatsApp</span><span class="sm:hidden">Escríbenos</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===== 1. HERO ===== -->
+<section id="inicio" class="grain relative overflow-hidden pt-28 pb-16 md:pt-36 md:pb-24">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-8">
+    <div class="lg:col-span-7">
+      <div class="reveal inline-flex max-w-full items-center gap-3 rounded-2xl border border-ink/10 bg-white/60 px-4 py-2.5 text-[.66rem] font-medium uppercase leading-snug tracking-[.12em] text-ink/80 backdrop-blur sm:rounded-full sm:text-[.72rem] sm:tracking-[.16em]">
+        <span class="dot shrink-0" aria-hidden="true"></span>
+        <span>Disponibilidad inmediata <span class="mx-1 text-gold">·</span> <span class="whitespace-nowrap">Oportunidad exclusiva</span></span>
+      </div>
+      <p class="eyebrow reveal mt-8" style="transition-delay:.05s">Renta exclusiva &nbsp;·&nbsp; Santa Fe &nbsp;·&nbsp; Piso 13</p>
+      <h1 class="display reveal mt-4 text-[3.1rem] sm:text-6xl lg:text-[5.4rem]" style="transition-delay:.1s">
+        Piso 13.<br><em>La ciudad</em><br>a tus pies.
+      </h1>
+      <p class="reveal mt-7 max-w-xl text-lg leading-relaxed text-ink/80 md:text-xl" style="transition-delay:.18s">
+        Departamento a estrenar con interiorismo showroom y terraza panorámica en Santa Fe.
+      </p>
+      <p class="reveal mt-4 max-w-xl text-[.95rem] leading-relaxed text-ink/60" style="transition-delay:.22s">
+        Una sola unidad en renta, lista para habitarse: luz natural de piso a techo, acabados de lujo y una terraza privada de 23.95&nbsp;m² suspendida sobre Santa Fe.
+      </p>
+
+      <div class="reveal mt-9 flex flex-col gap-3 sm:flex-row sm:items-center" style="transition-delay:.28s">
+        <a href="#agenda" class="btn btn-gold" data-cta="hero">Agendar Visita Exclusiva <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="hero" class="btn btn-wa"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Escribir por WhatsApp</a>
+      </div>
+
+      <div class="reveal mt-10 flex flex-wrap items-end gap-x-5 gap-y-2 border-t border-ink/10 pt-6" style="transition-delay:.34s">
+        <div>
+          <p class="text-[.7rem] uppercase tracking-[.2em] text-ink/50">Renta mensual</p>
+          <p class="display whitespace-nowrap text-[2.4rem] md:text-5xl">$37,000 <span class="whitespace-nowrap text-base font-sans font-light tracking-normal text-ink/60 md:text-lg">MXN / mes</span></p>
+        </div>
+        <p class="pb-1 text-sm text-ink/60">Mantenimiento incluido<br>Contrato a 1 año</p>
+      </div>
+    </div>
+
+    <div class="reveal relative mx-auto w-full max-w-md lg:col-span-5 lg:max-w-none" style="transition-delay:.15s">
+      <div class="arch absolute -right-3 -top-3 h-full w-full border border-gold/50" aria-hidden="true"></div>
+      <div class="arch relative aspect-[3/4] overflow-hidden bg-pearl shadow-[0_40px_80px_-40px_rgba(43,42,38,.45)]">
+        <img src="assets/hero-sala.webp" alt="Sala-comedor del departamento con ventanal de piso a techo y terraza privada" class="h-full w-full object-cover" fetchpriority="high" width="1000" height="1334">
+        <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-6 pt-20 text-ivory">
+          <p class="text-[.68rem] uppercase tracking-[.22em] opacity-80">Vista panorámica</p>
+          <p class="display text-2xl">Santa Fe, desde el piso 13</p>
+        </div>
+      </div>
+      <div class="absolute -left-2 top-16 hidden rounded-2xl bg-ivory/95 px-5 py-4 shadow-xl backdrop-blur md:block lg:-left-10">
+        <p class="display text-5xl leading-none text-wood">13</p>
+        <p class="mt-1 text-[.65rem] uppercase tracking-[.2em] text-ink/60">Nivel</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- stats -->
+  <div class="mx-auto mt-16 max-w-7xl px-5 md:mt-24 md:px-8">
+    <dl class="reveal grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-ink/10 md:grid-cols-4">
+      <div class="bg-ivory p-6 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Superficie total</dt><dd class="display mt-1 text-3xl md:text-4xl">110.35 m²</dd></div>
+      <div class="bg-ivory p-6 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Recámaras</dt><dd class="display mt-1 text-3xl md:text-4xl">2</dd></div>
+      <div class="bg-ivory p-6 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Baños</dt><dd class="display mt-1 text-3xl md:text-4xl">2</dd></div>
+      <div class="bg-ivory p-6 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Estacionamientos</dt><dd class="display mt-1 text-3xl md:text-4xl">2</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== 2. GALERÍA / PUNTOS DE EXPERIENCIA ===== -->
+<section id="galeria" class="bg-pearl/60 py-20 md:py-28">
+  <div class="mx-auto max-w-7xl px-5 md:px-8">
+    <div class="reveal mx-auto max-w-2xl text-center">
+      <p class="eyebrow">Puntos de experiencia</p>
+      <h2 class="display mt-4 text-4xl md:text-6xl">Diseñado para sentirse en casa <em>desde el primer paso.</em></h2>
+      <p class="mt-5 text-sm text-ink/55">Fotografías con mobiliario de ambientación. El departamento se renta sin amueblar.</p>
+    </div>
+
+    <!-- Estancia -->
+    <article class="mt-16 grid items-center gap-10 md:mt-24 lg:grid-cols-12 lg:gap-16">
+      <div class="reveal lg:col-span-5 lg:order-1">
+        <p class="eyebrow">01 — Estancia principal</p>
+        <h3 class="display mt-3 text-4xl md:text-5xl">Amplitud que se siente <em>al entrar.</em></h3>
+        <p class="mt-5 leading-relaxed text-ink/70">Un ventanal de piso a techo abre la sala-comedor hacia Santa Fe y llena el espacio de luz natural. Piso laminado en tono madera, una paleta neutra y una iluminación cálida indirecta crean una atmósfera serena, lista para recibirte.</p>
+        <ul class="mt-6 space-y-3 text-[.95rem] text-ink/80">
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Sala-comedor panorámica</li>
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Ventanales de piso a techo</li>
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Cocina integral de diseño</li>
+        </ul>
+        <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="galeria-estancia" class="btn btn-wa mt-8"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Preguntar por WhatsApp</a>
+      </div>
+      <div class="reveal lg:col-span-7 lg:order-2">
+        <div class="grid grid-cols-5 gap-4">
+          <img data-zoom src="assets/estancia.webp" alt="Sala con iluminación cálida indirecta y comedor al fondo" class="col-span-3 aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" width="1000" height="1334">
+          <img data-zoom src="assets/hero-sala.webp" alt="Sala con sofá modular verde olivo, madera natural y vista a la terraza" class="col-span-2 mt-12 aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" width="1000" height="1334">
+        </div>
+      </div>
+    </article>
+
+    <!-- Master suite -->
+    <article class="mt-20 grid items-center gap-10 md:mt-32 lg:grid-cols-12 lg:gap-16">
+      <div class="reveal lg:col-span-7">
+        <div class="grid grid-cols-2 gap-4">
+          <img data-zoom src="assets/recamara-1.webp" alt="Recámara principal con cama amplia, arte en muro y ventanal con vista a la ciudad" class="aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" width="900" height="1200">
+          <img data-zoom src="assets/recamara-2.webp" alt="Recámara con sillón olivo y ventanal panorámico sobre Santa Fe" class="mt-12 aspect-[3/4] w-full rounded-2xl object-cover shadow-xl" loading="lazy" width="900" height="1200">
+        </div>
+      </div>
+      <div class="reveal lg:col-span-5">
+        <p class="eyebrow">02 — Master suite</p>
+        <h3 class="display mt-3 text-4xl md:text-5xl">Un santuario de descanso <em>con vista.</em></h3>
+        <p class="mt-5 leading-relaxed text-ink/70">Despierta con la luz de la ciudad. La recámara principal combina una cama amplia, un ventanal panorámico y piso laminado en tono madera para un descanso a la altura del piso 13. La segunda recámara comparte la misma vista: ideal para huéspedes o home office.</p>
+        <ul class="mt-6 space-y-3 text-[.95rem] text-ink/80">
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Recámara principal con baño y clósets</li>
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Segunda recámara o estudio</li>
+          <li class="flex gap-3"><svg class="ic mt-0.5 text-gold"><use href="#i-check"/></svg> Luz natural de mañana y de tarde</li>
+        </ul>
+        <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="galeria-master" class="btn btn-wa mt-8"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Preguntar por WhatsApp</a>
+      </div>
+    </article>
+
+    <!-- Terraza -->
+    <article class="reveal relative mt-20 overflow-hidden rounded-3xl md:mt-32">
+      <img data-zoom src="assets/terraza.webp" alt="Ventanal panorámico y terraza privada con sala exterior, vista a Santa Fe" class="h-[34rem] w-full object-cover md:h-[36rem]" loading="lazy" width="1600" height="800">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#1c1b17]/95 via-[#1c1b17]/65 to-[#1c1b17]/5" aria-hidden="true"></div>
+      <div class="absolute inset-x-0 bottom-0 p-6 text-ivory md:p-12">
+        <div class="max-w-2xl">
+          <p class="eyebrow !text-[#D9C79F]">03 — Terraza privada</p>
+          <h3 class="display on-dark mt-3 text-4xl md:text-6xl">23.95 m² frente <em>al skyline.</em></h3>
+          <p class="mt-4 max-w-xl leading-relaxed text-ivory/80">Vista panorámica inigualable desde el piso 13: cielo abierto, la ciudad como telón de fondo y un espacio privado para recibir o simplemente detenerte.</p>
+          <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="galeria-terraza" class="btn btn-wa-light mt-7"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Quiero ver la terraza</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===== 3. FICHA ===== -->
+<section id="ficha" class="py-20 md:py-28">
+  <div class="mx-auto max-w-7xl px-5 md:px-8">
+    <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+      <div class="max-w-2xl">
+        <p class="eyebrow">Ficha y especificaciones</p>
+        <h2 class="display mt-4 text-4xl md:text-6xl">Todo lo que necesitas, <em>sin renunciar a nada.</em></h2>
+      </div>
+      <p class="max-w-xs text-sm leading-relaxed text-ink/60">Departamento nuevo, con acabados de lujo y mantenimiento incluido en la renta.</p>
+    </div>
+
+    <div class="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-area"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">86.4 m²</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Superficie habitable</p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.05s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-sun"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">23.95 m²</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Terraza privada · <span class="text-ink/80">110.35 m² totales</span></p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.1s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-bed"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">2 recámaras</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Principal con baño y clósets</p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.15s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-bath"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">2 baños</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Completos, acabados de lujo</p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-car"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">2 cajones</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Estacionamiento incluido</p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.05s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-tower"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">Piso 13</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Vistas panorámicas, gran luz natural</p>
+      </div>
+      <div class="reveal rounded-2xl border border-ink/10 bg-white/60 p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.1s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-chef"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">Cocina integral</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">De diseño, con zona de lavado</p>
+      </div>
+      <div class="reveal rounded-2xl border border-gold/40 bg-gradient-to-br from-[#F3EBDC] to-white p-4 transition hover:-translate-y-1 sm:p-6 hover:shadow-xl hover:shadow-ink/5" style="transition-delay:.15s">
+        <svg class="ic h-7 w-7 text-gold"><use href="#i-spark"/></svg>
+        <p class="display mt-4 text-[1.55rem] leading-tight sm:mt-5 sm:text-4xl">Amenidades</p>
+        <p class="mt-1 text-[.78rem] leading-snug text-ink/60 sm:text-sm">Incluidas, con mantenimiento</p>
+      </div>
+    </div>
+
+    <!-- condiciones -->
+    <dl class="reveal mt-4 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-ink/10 md:grid-cols-4">
+      <div class="bg-ivory p-5 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Renta mensual</dt><dd class="display mt-1 text-2xl md:text-3xl">$37,000 MXN</dd></div>
+      <div class="bg-ivory p-5 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Mantenimiento</dt><dd class="display mt-1 text-2xl md:text-3xl">Incluido</dd></div>
+      <div class="bg-ivory p-5 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Contrato</dt><dd class="display mt-1 text-2xl md:text-3xl">1 año</dd></div>
+      <div class="bg-ivory p-5 text-center"><dt class="text-[.68rem] uppercase tracking-[.2em] text-ink/50">Mobiliario</dt><dd class="display mt-1 text-2xl md:text-3xl">Sin amueblar</dd></div>
+    </dl>
+
+    <!-- ubicación -->
+    <div class="reveal mt-4 flex flex-col gap-5 rounded-2xl bg-olived p-7 text-ivory md:flex-row md:items-center md:justify-between md:p-9">
+      <div class="flex items-start gap-4">
+        <svg class="ic mt-1 h-6 w-6 text-[#D9C79F]"><use href="#i-pin"/></svg>
+        <div>
+          <p class="display text-2xl md:text-3xl">Santa Fe, Cuajimalpa de Morelos · CDMX</p>
+          <p class="mt-1 text-sm text-ivory/70">A un paso de Centro Santa Fe, Hospital ABC, Parque La Mexicana, Universidad Iberoamericana y Tec de Monterrey.</p>
+        </div>
+      </div>
+      <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="ficha" class="btn btn-wa-light shrink-0"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Pedir la ficha completa</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. AMENIDADES ===== -->
+<section id="amenidades" class="bg-pearl/60 py-20 md:py-28">
+  <div class="mx-auto max-w-7xl px-5 md:px-8">
+    <div class="reveal mx-auto max-w-2xl text-center">
+      <p class="eyebrow">Estilo de vida y amenidades</p>
+      <h2 class="display mt-4 text-4xl md:text-6xl">Tu día mejora <em>al bajar del elevador.</em></h2>
+      <p class="mt-5 leading-relaxed text-ink/70">Bienestar, deporte, entretenimiento y trabajo dentro del mismo complejo, incluidos con tu renta.</p>
+    </div>
+
+    <div class="reveal mt-12 grid auto-rows-[9.5rem] grid-cols-2 gap-3 sm:auto-rows-[11rem] md:grid-cols-4 md:gap-4 md:[grid-auto-flow:dense]">
+      <figure class="tile col-span-2 md:row-span-2"><img data-zoom src="assets/am-alberca.webp" alt="Alberca interior con carriles" loading="lazy"><figcaption>Alberca con carriles<small>Wellness</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-jacuzzi.webp" alt="Jacuzzi de spa" loading="lazy"><figcaption>Jacuzzi<small>Spa</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-sauna.webp" alt="Sauna de madera" loading="lazy"><figcaption>Sauna<small>Spa</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-vapor.webp" alt="Cuarto de vapor" loading="lazy"><figcaption>Vapor<small>Spa</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-padel.webp" alt="Cancha de pádel" loading="lazy"><figcaption>Pádel<small>Deporte</small></figcaption></figure>
+      <figure class="tile col-span-2"><img data-zoom src="assets/am-gym.webp" alt="Fitness center equipado" loading="lazy"><figcaption>Fitness Center<small>Equipado</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-squash.webp" alt="Cancha de squash" loading="lazy"><figcaption>Squash<small>Deporte</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-cine.webp" alt="Sala de cine VIP" loading="lazy"><figcaption>Cine VIP<small>Entretenimiento</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-boliche.webp" alt="Boliche" loading="lazy"><figcaption>Boliche<small>Entretenimiento</small></figcaption></figure>
+      <figure class="tile"><img data-zoom src="assets/am-arcade.webp" alt="Arcade" loading="lazy"><figcaption>Arcade<small>Entretenimiento</small></figcaption></figure>
+      <figure class="tile col-span-2"><img data-zoom src="assets/am-kids.webp" alt="Kids Club" loading="lazy"><figcaption>Kids Club<small>Familia</small></figcaption></figure>
+      <figure class="tile col-span-2"><img data-zoom src="assets/am-salon.webp" alt="Salón de eventos amplio con ventanales" loading="lazy"><figcaption>Salón de eventos<small>Reuniones y celebraciones</small></figcaption></figure>
+      <figure class="tile col-span-2"><img data-zoom src="assets/am-lounge.webp" alt="Lounge social con barra, mesas y pantalla" loading="lazy"><figcaption>Lounge social<small>Convivencia</small></figcaption></figure>
+    </div>
+
+    <ul class="reveal mt-6 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
+      <li class="flex items-center gap-3 rounded-2xl border border-ink/10 bg-white/60 p-4 text-sm"><svg class="ic text-gold"><use href="#i-brief"/></svg> Business Hub · Coworking</li>
+      <li class="flex items-center gap-3 rounded-2xl border border-ink/10 bg-white/60 p-4 text-sm"><svg class="ic text-gold"><use href="#i-leaf"/></svg> Áreas verdes</li>
+      <li class="flex items-center gap-3 rounded-2xl border border-ink/10 bg-white/60 p-4 text-sm"><svg class="ic text-gold"><use href="#i-shield"/></svg> Seguridad privada 24/7</li>
+      <li class="flex items-center gap-3 rounded-2xl border border-ink/10 bg-white/60 p-4 text-sm"><svg class="ic text-gold"><use href="#i-car"/></svg> Estacionamiento de visitas</li>
+    </ul>
+
+    <!-- video -->
+    <div class="reveal mt-16">
+      <div class="mx-auto mb-6 max-w-xl text-center">
+        <p class="eyebrow">Recorrido en video</p>
+        <h3 class="display mt-3 text-3xl md:text-5xl">Conoce el complejo <em>en movimiento.</em></h3>
+      </div>
+      <div class="relative overflow-hidden rounded-3xl bg-ink shadow-2xl shadow-ink/20">
+        <video id="tour" class="block aspect-[1280/634] w-full bg-ink" controls playsinline preload="none" poster="assets/recorrido-poster.webp">
+          <source src="assets/recorrido.mp4" type="video/mp4">
+        </video>
+        <button id="vidPlay" type="button" aria-label="Reproducir video" class="absolute inset-0 m-auto grid h-20 w-20 place-items-center rounded-full bg-ivory/90 text-ink shadow-xl backdrop-blur transition hover:scale-105">
+          <svg class="ic ic-fill !h-8 !w-8 translate-x-0.5"><use href="#i-play"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="reveal mt-12 flex flex-col items-center gap-3 text-center">
+      <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="amenidades" class="btn btn-wa-solid"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Conocer más por WhatsApp</a>
+      <p class="text-xs text-ink/50">Imágenes y video ilustrativos de las amenidades del complejo.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. AGENDA / CONTACTO ===== -->
+<section id="agenda" class="relative overflow-hidden bg-olived py-20 text-ivory md:py-28">
+  <div class="pointer-events-none absolute -right-40 -top-40 h-[32rem] w-[32rem] rounded-full bg-gold/10 blur-3xl" aria-hidden="true"></div>
+  <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-5 md:px-8 lg:grid-cols-12 lg:gap-16">
+    <div class="reveal lg:col-span-6">
+      <p class="eyebrow !text-[#D9C79F]">Visita exclusiva</p>
+      <h2 class="display on-dark mt-4 text-4xl md:text-6xl">Conócelo en persona. <em>Es diferente.</em></h2>
+      <p class="mt-6 max-w-md leading-relaxed text-ivory/75">Escríbenos o llámanos y agendamos tu recorrido. Las visitas se coordinan de forma individual para que veas el departamento con calma.</p>
+      <ul class="mt-8 space-y-4 text-[.95rem] text-ivory/85">
+        <li class="flex gap-3"><svg class="ic mt-0.5 text-[#D9C79F]"><use href="#i-check"/></svg> Departamento a estrenar, disponibilidad inmediata</li>
+        <li class="flex gap-3"><svg class="ic mt-0.5 text-[#D9C79F]"><use href="#i-check"/></svg> Recorrido acompañado por tu asesor</li>
+        <li class="flex gap-3"><svg class="ic mt-0.5 text-[#D9C79F]"><use href="#i-check"/></svg> Contrato de arrendamiento a 1 año</li>
+      </ul>
+    </div>
+
+    <div class="reveal lg:col-span-6">
+      <div class="rounded-3xl bg-ivory p-7 text-ink shadow-2xl shadow-black/30 md:p-10">
+        <p class="eyebrow">Agenda tu visita</p>
+        <h3 class="display mt-2 text-3xl md:text-4xl">Elige cómo prefieres hablar con nosotros</h3>
+
+        <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="agenda" class="btn btn-wa-solid mt-8 w-full !py-4 text-base">
+          <svg class="ic ic-fill !h-6 !w-6"><use href="#i-wa"/></svg> Agendar por WhatsApp
+        </a>
+
+        <div class="my-5 flex items-center gap-4 text-xs uppercase tracking-[.2em] text-ink/40" aria-hidden="true">
+          <span class="h-px flex-1 bg-ink/10"></span> o llama directo <span class="h-px flex-1 bg-ink/10"></span>
+        </div>
+
+        <a href="tel:+522206420082" data-call="agenda" class="btn btn-call w-full !py-4 text-base">
+          <svg class="ic"><use href="#i-phone"/></svg> +52 220 642 0082
+        </a>
+        <div class="mt-6 flex items-center justify-center gap-3 border-t border-ink/10 pt-5">
+          <img src="assets/dora-sabido.webp" alt="Dora Sabido, IKAL Realty Group" width="320" height="320" loading="lazy" class="h-12 w-12 rounded-full object-cover object-top ring-1 ring-gold/60">
+          <p class="text-left text-xs leading-snug text-ink/55"><span class="block text-sm font-medium text-ink">Dora Sabido</span>Contacto directo · IKAL Realty Group</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== 6. FOOTER ===== -->
+<footer class="bg-ink pb-28 pt-14 text-ivory/75 md:pb-14">
+  <div class="mx-auto max-w-7xl px-5 md:px-8">
+    <div class="grid gap-10 md:grid-cols-12">
+      <div class="md:col-span-5">
+        <img src="assets/logo-ikal-claro.png" alt="IKAL Realty Group" width="296" height="128" loading="lazy" class="h-20 w-auto">
+        <p class="mt-6 max-w-sm text-sm leading-relaxed">Propiedad comercializada en exclusiva por IKAL Realty Group. Una oportunidad única en el piso 13 de Santa Fe.</p>
+      </div>
+
+      <div class="md:col-span-4">
+        <p class="text-[.68rem] uppercase tracking-[.22em] text-gold">Tu asesor asignado</p>
+        <div class="mt-3 flex items-center gap-4">
+          <img src="assets/dora-sabido.webp" alt="Dora Sabido, IKAL Realty Group" width="320" height="320" loading="lazy" class="h-20 w-20 rounded-full object-cover object-top ring-2 ring-gold/50 ring-offset-4 ring-offset-ink">
+          <p class="display text-3xl text-ivory">Dora Sabido</p>
+        </div>
+        <ul class="mt-5 space-y-2.5 text-sm">
+          <li><a href="tel:+522206420082" data-call="footer" class="inline-flex items-center gap-3 transition hover:text-ivory"><svg class="ic text-gold"><use href="#i-phone"/></svg> +52 220 642 0082</a></li>
+          <li><a href="mailto:dsabido@ikalrealtygroup.com.mx" class="inline-flex items-center gap-3 break-all transition hover:text-ivory"><svg class="ic text-gold"><use href="#i-mail"/></svg> dsabido@ikalrealtygroup.com.mx</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 md:text-right">
+        <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="footer" class="btn btn-wa-solid"><svg class="ic ic-fill"><use href="#i-wa"/></svg> Escribir por WhatsApp</a>
+        <a href="#agenda" class="mt-3 block text-sm underline decoration-gold/50 underline-offset-4 transition hover:text-ivory">Agendar visita exclusiva</a>
+      </div>
+    </div>
+
+    <div class="mt-12 border-t border-white/10 pt-6 text-xs leading-relaxed text-ivory/45">
+      <p>Las imágenes son ilustrativas. El departamento se renta sin mobiliario; el mobiliario y la decoración mostrados son únicamente de ambientación. Superficies, precio, disponibilidad y condiciones sujetos a cambio sin previo aviso y a la validación de tu asesor.</p>
+      <p class="mt-3">© <span id="yr">2026</span> IKAL Realty Group. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Barra inferior móvil: llamar + WhatsApp -->
+<div id="mbar" class="fixed inset-x-0 bottom-0 z-[60] flex gap-2 border-t border-ink/10 bg-ivory/95 px-3 pt-3 backdrop-blur md:hidden" style="padding-bottom:calc(.75rem + env(safe-area-inset-bottom))">
+  <a href="tel:+522206420082" data-call="barra-movil" class="btn btn-call flex-1 !px-3 !py-3.5"><svg class="ic"><use href="#i-phone"/></svg> Llamar</a>
+  <a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="barra-movil" class="btn btn-wa-solid flex-[1.4] !px-3 !py-3.5"><svg class="ic ic-fill"><use href="#i-wa"/></svg> WhatsApp</a>
+</div>
+
+<!-- WhatsApp flotante (escritorio) -->
+<a href="https://wa.link/hzvet1" target="_blank" rel="noopener" data-wa="flotante" class="fab" aria-label="Escribir por WhatsApp">
+  <svg class="ic ic-fill"><use href="#i-wa"/></svg><span>Escríbenos por WhatsApp</span>
+</a>
+
+<!-- Lightbox -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Imagen ampliada">
+  <button type="button" aria-label="Cerrar"><svg class="ic"><use href="#i-x"/></svg></button>
+  <img alt="">
+</div>
+
+<script>
+(() => {
+  /* ───────── CONFIGURACIÓN ─────────
+     META_PIXEL_ID : ID del Pixel de Meta (opcional). Registra 'Contact' al tocar WhatsApp o llamada. */
+  const CONFIG = { META_PIXEL_ID: '', PROPERTY: 'Renta · Piso 13 · Santa Fe' };
+
+  if (CONFIG.META_PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.META_PIXEL_ID); fbq('track', 'PageView');
+  }
+  const track = (ev, params) => { try { if (window.fbq) fbq('track', ev, params || {}); } catch (_) {} };
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Header sólido al hacer scroll */
+  const hdr = document.getElementById('hdr');
+  const onScroll = () => hdr.classList.toggle('solid', window.scrollY > 24);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* Reveal */
+  const els = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => entries.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    }), { threshold: .12, rootMargin: '0px 0px -6% 0px' });
+    els.forEach(el => io.observe(el));
+  } else { els.forEach(el => el.classList.add('in')); }
+
+  /* Tracking de contacto */
+  document.querySelectorAll('[data-wa]').forEach(a => a.addEventListener('click', () => track('Contact', { content_name: CONFIG.PROPERTY, method: 'whatsapp', placement: a.dataset.wa })));
+  document.querySelectorAll('[data-call]').forEach(a => a.addEventListener('click', () => track('Contact', { content_name: CONFIG.PROPERTY, method: 'phone', placement: a.dataset.call })));
+
+  /* Lightbox */
+  const lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
+  document.querySelectorAll('[data-zoom]').forEach(img => img.addEventListener('click', () => { lbImg.src = img.currentSrc || img.src; lbImg.alt = img.alt; lb.classList.add('open'); }));
+  const closeLb = () => lb.classList.remove('open');
+  lb.addEventListener('click', closeLb);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+
+  /* Video */
+  const tour = document.getElementById('tour'), vidPlay = document.getElementById('vidPlay');
+  vidPlay.addEventListener('click', () => tour.play());
+  tour.addEventListener('play', () => vidPlay.classList.add('hidden'));
+  tour.addEventListener('ended', () => vidPlay.classList.remove('hidden'));
+})();
+</script>
+</body>
+</html>
