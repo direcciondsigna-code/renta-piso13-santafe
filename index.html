@@ -524,8 +524,8 @@
 <script>
 (() => {
   /* ───────── CONFIGURACIÓN ─────────
-     META_PIXEL_ID : ID del Pixel de Meta (opcional). Registra 'Contact' al tocar WhatsApp o llamada. */
-  const CONFIG = { META_PIXEL_ID: '', PROPERTY: 'Renta · Piso 13 · Santa Fe' };
+     META_PIXEL_ID : ID del Pixel de Meta (opcional). Registra 'Lead' y 'Contact' al tocar WhatsApp o llamada. */
+  const CONFIG = { META_PIXEL_ID: '1067784136072766', PROPERTY: 'Renta · Piso 13 · Santa Fe' };
 
   if (CONFIG.META_PIXEL_ID) {
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
@@ -550,8 +550,13 @@
   } else { els.forEach(el => el.classList.add('in')); }
 
   /* Tracking de contacto */
-  document.querySelectorAll('[data-wa]').forEach(a => a.addEventListener('click', () => track('Contact', { content_name: CONFIG.PROPERTY, method: 'whatsapp', placement: a.dataset.wa })));
-  document.querySelectorAll('[data-call]').forEach(a => a.addEventListener('click', () => track('Contact', { content_name: CONFIG.PROPERTY, method: 'phone', placement: a.dataset.call })));
+  /* Un clic en WhatsApp o llamada es un prospecto: se registran 'Lead' (evento para optimizar) y 'Contact'. */
+  const registrarContacto = (method, placement) => {
+    const p = { content_name: CONFIG.PROPERTY, method, placement };
+    track('Lead', p); track('Contact', p);
+  };
+  document.querySelectorAll('[data-wa]').forEach(a => a.addEventListener('click', () => registrarContacto('whatsapp', a.dataset.wa)));
+  document.querySelectorAll('[data-call]').forEach(a => a.addEventListener('click', () => registrarContacto('phone', a.dataset.call)));
 
   /* Lightbox */
   const lb = document.getElementById('lb'), lbImg = lb.querySelector('img');
